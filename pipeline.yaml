@@ -33,6 +33,7 @@ spec:
     - name: kaniko-task
       taskRef:
         name: kaniko-task-ref
+      serviceAccountName: tekton6
       workspaces:
         - name: task-ws
           workspace: pipeline-ws
