@@ -117,9 +117,9 @@ spec:
     - name: BUILDER_IMAGE
       description: The image on which builds will run (default is v1.5.1)
       default: gcr.io/kaniko-project/executor:debug
-  #workspaces:
-  #  - name: task-ws
-  #    description: Workspace for sharing files between tasks
+  workspaces:
+    - name: task-ws
+      description: Workspace for sharing files between tasks
     #- name: dockerconfig
     #  description: Includes a docker `config.json`
     #  optional: true
